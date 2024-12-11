@@ -3,6 +3,7 @@ import { Plus, Trash2, Edit, TrendingUp, Coins, Gem } from 'lucide-react';
 import { ViewMode, HeroConfig } from '../../lib/types/team';
 import { RARITY_NAMES } from '../../lib/constants';
 import { formatNumber, formatEfficiency } from '../../lib/formatting';
+import { StarDisplay } from '../StarDisplay';
 
 interface HeroGridProps {
   heroes: Array<HeroConfig | null>;
@@ -102,7 +103,7 @@ export function HeroGrid({
                     <div>
                       <span className="text-galaxy-400">Stars</span>
                       <div className="text-galaxy-100 font-medium">
-                        ⭐ {hero.stars}
+                        <StarDisplay stars={hero.stars} />
                       </div>
                     </div>
                   </div>
