@@ -53,7 +53,7 @@ export function UnifiedPowerInput() {
             placeholder="Enter power level to analyze"
           />
           <p className="mt-2 text-sm text-galaxy-400">
-            Enter any power level to analyze planet requirements
+            Enter any power level to analyze star requirements
           </p>
         </div>
       </div>
