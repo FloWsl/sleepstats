@@ -6,36 +6,30 @@ interface StarDisplayProps {
 }
 
 export function StarDisplay({ stars }: StarDisplayProps) {
-  // Calculate the number of each type of star
-  const goldStars = Math.max(0, Math.min(5, stars - 10));
-  const silverStars = Math.max(0, Math.min(5, stars - 5 - goldStars));
-  const bronzeStars = Math.max(0, Math.min(5, stars - silverStars - goldStars));
+  // Determine star color based on total stars
+  let starColor = '';
+  let starClass = '';
+  
+  if (stars > 10) {
+    starColor = 'gold';
+    starClass = 'text-yellow-400';
+  } else if (stars > 5) {
+    starColor = 'silver';
+    starClass = 'text-gray-300';
+  } else {
+    starColor = 'bronze';
+    starClass = 'text-amber-700';
+  }
+
+  // Calculate number of stars to display (max 5)
+  const displayStars = Math.min(5, stars > 10 ? stars - 10 : stars > 5 ? stars - 5 : stars);
 
   return (
     <div className="flex gap-1">
-      {/* Gold Stars */}
-      {goldStars > 0 && Array.from({ length: goldStars }).map((_, i) => (
+      {Array.from({ length: displayStars }).map((_, i) => (
         <Star
-          key={`gold-${i}`}
-          className="w-4 h-4 text-yellow-400"
-          fill="currentColor"
-        />
-      ))}
-      
-      {/* Silver Stars */}
-      {silverStars > 0 && Array.from({ length: silverStars }).map((_, i) => (
-        <Star
-          key={`silver-${i}`}
-          className="w-4 h-4 text-gray-300"
-          fill="currentColor"
-        />
-      ))}
-      
-      {/* Bronze Stars */}
-      {bronzeStars > 0 && Array.from({ length: bronzeStars }).map((_, i) => (
-        <Star
-          key={`bronze-${i}`}
-          className="w-4 h-4 text-amber-700"
+          key={`${starColor}-${i}`}
+          className={`w-4 h-4 ${starClass}`}
           fill="currentColor"
         />
       ))}
