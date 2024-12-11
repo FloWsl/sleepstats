@@ -12,7 +12,7 @@ export function UnifiedPlanetDisplay() {
       <div className="bg-galaxy-900/50 backdrop-blur-sm rounded-xl p-6 border border-galaxy-700/50 shadow-neon">
         <div className="flex items-center gap-2 text-galaxy-300">
           <Map className="w-5 h-5" />
-          <h3 className="font-semibold">Select a planet to see analysis</h3>
+          <h3 className="font-semibold">Select a star to see analysis</h3>
         </div>
       </div>
     );
