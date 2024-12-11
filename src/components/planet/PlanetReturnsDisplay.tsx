@@ -19,7 +19,7 @@ export function PlanetReturnsDisplay() {
 
           <div className="space-y-4">
             <div>
-              <div className="text-sm text-galaxy-400">Clear a Planet</div>
+              <div className="text-sm text-galaxy-400">Clear a Star</div>
               <div className="text-xl font-bold text-galaxy-100">
                 {formatNumber(planetCalculations.requiredPowerFor100)}
               </div>
@@ -47,7 +47,7 @@ export function PlanetReturnsDisplay() {
           <div className="space-y-4">
             <div>
               <div className="text-sm text-galaxy-400">
-                Total Gold per Planet
+                Total Gold per Star
               </div>
               <div className="text-xl font-bold text-galaxy-100">
                 {formatNumber(planetCalculations.goldPerPlanet)}
