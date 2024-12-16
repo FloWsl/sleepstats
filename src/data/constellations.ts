@@ -11,7 +11,6 @@ export interface ConstellationData {
 }
 
 export const CONSTELLATION_DATA = [
- [
   {
     "name": "Sky Bridge",
     "challenges": 1,
@@ -892,5 +891,4 @@ export const CONSTELLATION_DATA = [
     "powerRequired50": 168000000,
     "order": 80
   }
-]
 ];
