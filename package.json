@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@analytics/google-analytics": "^1.0.7",
     "@tanstack/react-router": "^1.16.6",
+    "analytics": "^0.8.9",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
