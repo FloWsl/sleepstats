@@ -1,9 +1,8 @@
-import { createRootRoute, createRoute, Outlet, redirect } from '@tanstack/react-router';
+import { createRootRoute, createRoute, Outlet } from '@tanstack/react-router';
 import { Navigation } from './components/Navigation';
 import { IndividualCalculator } from './pages/IndividualCalculator';
 import { TeamCalculator } from './pages/TeamCalculator';
 import { AirdropGuide } from './pages/AirdropGuide';
-import { useAuthStore } from './store/authStore';
 
 const rootRoute = createRootRoute({
   component: () => (
@@ -23,28 +22,12 @@ const indexRoute = createRoute({
 const calculatorRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/calculator',
-  beforeLoad: () => {
-    const isAuthenticated = useAuthStore.getState().isAuthenticated;
-    if (!isAuthenticated) {
-      throw redirect({
-        to: '/',
-      });
-    }
-  },
   component: IndividualCalculator,
 });
 
 const teamRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/team',
-  beforeLoad: () => {
-    const isAuthenticated = useAuthStore.getState().isAuthenticated;
-    if (!isAuthenticated) {
-      throw redirect({
-        to: '/',
-      });
-    }
-  },
   component: TeamCalculator,
 });
 
