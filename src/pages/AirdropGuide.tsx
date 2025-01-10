@@ -136,12 +136,12 @@ export function AirdropGuide() {
               </p>
               <div className="my-6 w-full flex justify-center gap-4">
                 <img
-                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/homepage1.png"
+                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/homepage1.webp"
                   alt="Telegram Interface Overview"
                   className="rounded-lg border border-galaxy-700/50 h-96 w-auto object-contain"
                 />
                 <img
-                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/homepage2.png"
+                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/homepage2.webp"
                   alt="Telegram Interface Overview"
                   className="rounded-lg border border-galaxy-700/50 h-96 w-auto object-contain"
                 />
@@ -275,7 +275,7 @@ export function AirdropGuide() {
                     </div>
                     <div className="my-6 w-full flex justify-center gap-4">
                       <img
-                        src="https://res.cloudinary.com/archeillustree/image/upload/v1735042687/gotchistats/hero-collection.png"
+                        src="https://res.cloudinary.com/archeillustree/image/upload/v1735042687/gotchistats/hero-collection.webp"
                         alt="Hero Collection Page"
                         className="rounded-lg border border-galaxy-700/50 h-96 w-auto object-contain"
                       />
@@ -372,7 +372,7 @@ export function AirdropGuide() {
 
                 <div className="w-full flex justify-center my-6">
                   <img
-                    src="https://res.cloudinary.com/archeillustree/image/upload/v1735042687/gotchistats/individual-ranking.png"
+                    src="https://res.cloudinary.com/archeillustree/image/upload/v1735042687/gotchistats/individual-ranking.webp"
                     alt="Gold Leaderboard Interface"
                     className="rounded-lg border border-galaxy-700/50 h-96 w-auto object-contain"
                   />
@@ -439,7 +439,7 @@ export function AirdropGuide() {
 
                 <div className="w-full flex justify-center my-6">
                   <img
-                    src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/clan-ranking.png"
+                    src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/clan-ranking.webp"
                     alt="Clan Interface"
                     className="rounded-lg border border-galaxy-700/50 h-96 w-auto object-contain"
                   />
@@ -495,7 +495,7 @@ export function AirdropGuide() {
             </div>
               <div className="w-full flex justify-center my-6">
                 <img
-                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/claim-page.png"
+                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/claim-page.webp"
                   alt="Daily claim page"
                   className="rounded-lg border border-galaxy-700/50 h-96 w-auto object-contain"
                 />
@@ -602,7 +602,7 @@ export function AirdropGuide() {
                 </div>
                *<div className="w-full flex justify-center my-6">
                 <img
-                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/engage-bot.png"
+                  src="https://res.cloudinary.com/archeillustree/image/upload/v1735042686/gotchistats/engage-bot.webp"
                   alt="Daily claim page"
                   className="rounded-lg border border-galaxy-700/50 h-24 w-auto object-contain"
                 />
