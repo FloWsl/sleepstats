@@ -35,6 +35,16 @@ export function AirdropGuide() {
           </p>
         </header>
 
+        <section className="bg-yellow-900/30 backdrop-blur-sm rounded-xl p-8 border border-yellow-700/50 shadow-neon mb-8">
+  <div className="flex items-center gap-3">
+    <Bell className="w-6 h-6 text-yellow-400" />
+    <h2 className="text-2xl font-bold text-yellow-100">TGE Announcement</h2>
+  </div>
+  <p className="text-yellow-50 mt-4">
+    Token Generation Event (TGE) is currently planned for April 2025. Stay tuned for more details and make sure to maximize your points before the snapshot!
+  </p>
+</section>
+
         {/* Table of Contents */}
         <section className="bg-galaxy-900/50 backdrop-blur-sm rounded-xl p-8 border border-galaxy-700/50 shadow-neon mb-8">
           <h2 className="text-2xl font-bold text-galaxy-100 mb-6">
